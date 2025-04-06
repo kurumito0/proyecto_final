@@ -1,0 +1,254 @@
+html {
+  max-height: 800%;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #000000;
+  background-image: url(../img/22.jpg);
+  background-repeat: repeat;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: 10%;
+  overflow: hidden;
+}
+
+#shortcur {
+  border-radius: 1%;
+
+}
+
+* {
+  box-sizing: border-box;
+  border-top: #ffffff;
+}
+
+section {
+  position: sticky;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.btn-pluss {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: center;
+  padding-right: center;
+  border-radius: 22px;
+  width: 90px;
+  margin: 0 auto;
+  background-color: rgba(9, 51, 114, 0);
+}
+
+.btn-pluss a {
+  display: block;
+  position: relative;
+  color: #454545;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn-pluss a:hover {
+  text-decoration: inherit;
+  color: rgb(255, 255, 255);
+  background-color: #101f3900;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.btn-pluss:after {
+  content: 'MENU';
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  display: block;
+  height: auto;
+  width: 80%;
+  border-radius: 22px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #52525200;
+  color: white;
+  -webkit-transform: translateY(0%) translateX(-50%);
+  transform: translateY(0%) translateX(-50%);
+  -webkit-transition: all .3s .5s ease;
+  transition: all .3s .5s ease;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.btn-pluss ul {
+  opacity: 0;
+}
+
+.btn-pluss ul {
+  margin-top: 15px;
+  opacity: 0;
+  width: 100%;
+  margin-left: 0px;
+  -webkit-transition: left .2s ease;
+  transition: left .2s ease;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.btn-pluss ul li {
+  background-color: #e4e4e400;
+  margin-top: 6px;
+  border-radius: 5px;
+  width: 110%;
+  height: 10%;
+  overflow: hidden;
+  -webkit-transition: height 5s ease;
+  transition: height 5s ease;
+  text-align: center;
+  border-color: rgb(255, 255, 255);
+}
+
+.btn-pluss-wrapper:hover .btn-pluss {
+  width: 150px;
+  border-radius: 15px;
+  padding-bottom: 5px;
+  -webkit-transition: width .3s ease, border-radius .3s ease, padding-bottom .3s ease;
+  transition: width .3s ease, border-radius .3s ease, padding-bottom .3s ease;
+
+}
+
+.btn-pluss-wrapper:hover .btn-pluss::after {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  left: 50%;
+  top: 10px;
+  -webkit-transform: translateY(-5px) translateX(-30%);
+  transform: translateY(-5px) translateX(-50%);
+}
+
+.btn-pluss-wrapper:hover .btn-pluss ul {
+  opacity: 1;
+  margin-top: 28px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.btn-pluss-wrapper:hover .btn-pluss ul::after {
+  -webkit-transform: translateY(0px) translateX(-25px);
+  transform: translateY(0px) translateX(-21%);
+}
+
+.btn-pluss-wrapper:hover .btn-pluss li {
+  height: auto;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+  -webkit-transform: translateY(0px) translateX(-25px);
+  transform: translateY(0px) translateX(-21%);
+  text-align: center;
+}
+
+.btn-pluss-wrapper:hover .btn-pluss li:BEFORE {
+  border-bottom: 1px solid #032c55;
+  -webkit-transform: translateY(0px) translateX(-25px);
+  transform: translateY(0px) translateX(-21%);
+  text-align: center;
+}
+
+.btn-shine {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 12px 11px;
+  color: #032c5500;
+  background: linear-gradient(to right, #727272 0, #70707050 60%, #00000000 50%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 5s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 0;
+  font-size: 40px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 650px;
+  }
+
+  100% {
+    background-position: 650px;
+  }
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 650px;
+  }
+
+  100% {
+    background-position: 650px;
+  }
+}
+
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 650px;
+  }
+
+  100% {
+    background-position: 650px;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+
+  60% {
+    background-position: 700;
+  }
+
+  100% {
+    background-position: 600px;
+  }
+}
